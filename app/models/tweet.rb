@@ -8,4 +8,12 @@ class Tweet
   has_one :parent_tweet
 
   field :comment, type: String
+
+  def like!
+    puts "Like"
+  end
+
+  def retweet!(message)
+    puts "Retweet with ", message
+  end
 end
